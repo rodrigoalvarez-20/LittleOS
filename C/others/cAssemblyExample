@@ -1,0 +1,12 @@
+/* Funcion de C */
+int sum_of_three(int arg1, int arg2, int arg3){
+    return arg1 + arg2 + arg3;
+}
+
+;Codigo ensamblador
+
+external sum_of_three ; La funcion "sum_of_three" es definida en algun otro lado
+push dword 3
+push dword 2
+push dword 1
+call sum_of_three   ;Se llama a la funcion, la salida sera mandada a EAX
